@@ -4,8 +4,8 @@
   "private": true,
   "description": "Portfolio website for Onurcan Bora - Artist & Creative Director",
   "engines": {
-    "node": ">=18 <=20",
-    "npm": ">=9 <=10"
+    "node": ">=20.9.0",
+    "npm": ">=10"
   },
   "scripts": {
     "dev": "next dev",
