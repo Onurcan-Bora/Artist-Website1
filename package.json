@@ -1,7 +1,8 @@
 {
-  "name": "website",
-  "version": "0.1.0",
+  "name": "onurcanbora-portfolio",
+  "version": "1.0.0",
   "private": true,
+  "description": "Portfolio website for Onurcan Bora - Artist & Creative Director",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #ffffff;
 }
 
 @theme inline {
@@ -12,15 +12,356 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  overflow-x: hidden;
+  font-weight: 400;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Apple-inspired Sophisticated Animated Gradients */
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes gradient-y {
+  0%, 100% {
+    background-position: 50% 0%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+}
+
+@keyframes gradient-xy {
+  0%, 100% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+}
+
+/* White text with blue light passing through - with proper overflow handling */
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #ffffff 30%,
+    #7cc5f0 50%,
+    #ffffff 70%,
+    #ffffff 100%
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-x 8s ease infinite;
+  padding-bottom: 0.1em;
+  line-height: 1.2;
+}
+
+.gradient-text-fast {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #ffffff 25%,
+    #5da9e9 50%,
+    #ffffff 75%,
+    #ffffff 100%
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-x 6s ease infinite;
+  padding-bottom: 0.1em;
+  line-height: 1.2;
+}
+
+.gradient-text-silver {
+  background: linear-gradient(
+    90deg,
+    #8e8e93,
+    #aeaeb2,
+    #c7c7cc,
+    #aeaeb2,
+    #8e8e93
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-x 15s ease infinite;
+}
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(
+    45deg,
+    #1e3a5f,
+    #2c5f8d,
+    #3a7bc8,
+    #1e3a5f
+  );
+  background-size: 300% 300%;
+  animation: gradient-xy 10s ease infinite;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+.gradient-bg {
+  background: linear-gradient(
+    135deg,
+    rgba(30, 58, 95, 0.05),
+    rgba(44, 95, 141, 0.03),
+    rgba(58, 123, 200, 0.02),
+    rgba(44, 95, 141, 0.03)
+  );
+  background-size: 400% 400%;
+  animation: gradient-xy 18s ease infinite;
+}
+
+.gradient-button {
+  background: linear-gradient(
+    90deg,
+    #1e3a5f,
+    #2c5f8d,
+    #3a7bc8,
+    #1e3a5f
+  );
+  background-size: 300% 300%;
+  animation: gradient-x 8s ease infinite;
+}
+
+.gradient-button-accent {
+  background: linear-gradient(
+    90deg,
+    #1e3a5f,
+    #2c5f8d,
+    #3a7bc8,
+    #1e3a5f
+  );
+  background-size: 300% 300%;
+  animation: gradient-x 8s ease infinite;
+}
+
+/* Apple-style animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(30, 58, 95, 0.3),
+                0 0 30px rgba(44, 95, 141, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(44, 95, 141, 0.4),
+                0 0 50px rgba(58, 123, 200, 0.2);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in 0.8s ease-out 0.2s both;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fade-in 0.8s ease-out 0.4s both;
+}
+
+.animate-fade-in-delay-3 {
+  animation: fade-in 0.8s ease-out 0.6s both;
+}
+
+.animate-fade-scale {
+  animation: fade-in-scale 1s ease-out;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 5s ease-in-out infinite;
+}
+
+/* Platform brand colors on hover */
+.spotify-hover {
+  transition: all 0.3s ease;
+}
+
+.spotify-hover:hover {
+  background: #1DB954;
+  border-color: #1DB954;
+}
+
+.spotify-hover:hover svg {
+  color: #000000;
+}
+
+.youtube-hover {
+  transition: all 0.3s ease;
+}
+
+.youtube-hover:hover {
+  background: #FF0000;
+  border-color: #FF0000;
+}
+
+.youtube-hover:hover svg {
+  color: #ffffff;
+}
+
+.instagram-hover {
+  transition: all 0.3s ease;
+}
+
+.instagram-hover:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: transparent;
+}
+
+.instagram-hover:hover svg {
+  color: #ffffff;
+}
+
+/* Icon glow effect on hover */
+.icon-glow {
+  transition: all 0.3s ease;
+}
+
+.icon-glow:hover {
+  box-shadow: 
+    0 0 20px rgba(255, 255, 255, 0.4),
+    0 0 40px rgba(255, 255, 255, 0.2),
+    0 0 60px rgba(255, 255, 255, 0.1);
+}
+
+.spotify-hover.icon-glow:hover {
+  box-shadow: 
+    0 0 20px rgba(29, 185, 84, 0.6),
+    0 0 40px rgba(29, 185, 84, 0.4),
+    0 0 60px rgba(29, 185, 84, 0.2);
+}
+
+.youtube-hover.icon-glow:hover {
+  box-shadow: 
+    0 0 20px rgba(255, 0, 0, 0.6),
+    0 0 40px rgba(255, 0, 0, 0.4),
+    0 0 60px rgba(255, 0, 0, 0.2);
+}
+
+.instagram-hover.icon-glow:hover {
+  box-shadow: 
+    0 0 20px rgba(225, 48, 108, 0.6),
+    0 0 40px rgba(225, 48, 108, 0.4),
+    0 0 60px rgba(225, 48, 108, 0.2);
+}
+
+/* Button glow effect on hover */
+.button-glow {
+  transition: all 0.3s ease;
+}
+
+.button-glow:hover {
+  box-shadow: 
+    0 0 20px rgba(30, 58, 95, 0.6),
+    0 0 40px rgba(44, 95, 141, 0.4),
+    0 0 60px rgba(58, 123, 200, 0.3);
+}
+
+/* Apple-style scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #1e3a5f, #2c5f8d);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #2c5f8d, #3a7bc8);
+}
+
+/* Apple-style glassmorphism */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(30px) saturate(150%);
+  border: 0.5px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-effect-strong {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40px) saturate(180%);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Subtle elegant glow */
+.elegant-glow {
+  text-shadow: 
+    0 0 20px rgba(30, 58, 95, 0.3),
+    0 0 40px rgba(44, 95, 141, 0.15);
+}
+
+/* Apple-style modern blur effect for navbar - Pill/Island shape - Higher opacity */
+.nav-blur {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: saturate(180%) blur(30px);
+  -webkit-backdrop-filter: saturate(180%) blur(30px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: none;
 }
