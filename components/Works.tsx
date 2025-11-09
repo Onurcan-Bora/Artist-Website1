@@ -55,11 +55,11 @@ export default function Works() {
         <div className="max-w-7xl mx-auto w-full">
           <div className="space-y-8 sm:space-y-12 md:space-y-14">
             <div className="text-center space-y-2 sm:space-y-3">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-tight gradient-text-fast px-2">
+              <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-light tracking-tight gradient-text-fast px-2">
                 Galeri
               </h2>
               <div className="w-12 sm:w-16 h-0.5 gradient-button-accent mx-auto rounded-full"></div>
-              <p className="text-sm sm:text-base md:text-lg text-white/70 max-w-2xl mx-auto font-light px-2">
+              <p className="text-base sm:text-lg md:text-lg text-white/70 max-w-2xl mx-auto font-light px-2">
                 Konserler ve basın çekimlerinden fotoğraflar
               </p>
             </div>
@@ -68,7 +68,7 @@ export default function Works() {
             <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
               <button
                 onClick={() => setSelectedCategory('all')}
-                className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-light transition-all duration-300 ${
+                className={`px-5 sm:px-5 py-2 sm:py-2 rounded-full text-sm sm:text-sm font-light transition-all duration-300 ${
                   selectedCategory === 'all'
                     ? 'gradient-button-accent text-white scale-105 shadow-lg border border-white/20'
                     : 'glass-effect text-white/70 border border-white/10 hover:scale-105 hover:border-white/20 hover:text-white'
@@ -78,7 +78,7 @@ export default function Works() {
               </button>
               <button
                 onClick={() => setSelectedCategory('concerts')}
-                className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-light transition-all duration-300 ${
+                className={`px-5 sm:px-5 py-2 sm:py-2 rounded-full text-sm sm:text-sm font-light transition-all duration-300 ${
                   selectedCategory === 'concerts'
                     ? 'gradient-button-accent text-white scale-105 shadow-lg border border-white/20'
                     : 'glass-effect text-white/70 border border-white/10 hover:scale-105 hover:border-white/20 hover:text-white'
@@ -88,7 +88,7 @@ export default function Works() {
               </button>
               <button
                 onClick={() => setSelectedCategory('press')}
-                className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-light transition-all duration-300 ${
+                className={`px-5 sm:px-5 py-2 sm:py-2 rounded-full text-sm sm:text-sm font-light transition-all duration-300 ${
                   selectedCategory === 'press'
                     ? 'gradient-button-accent text-white scale-105 shadow-lg border border-white/20'
                     : 'glass-effect text-white/70 border border-white/10 hover:scale-105 hover:border-white/20 hover:text-white'
@@ -115,7 +115,7 @@ export default function Works() {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
-                  <p className="mt-2 sm:mt-3 text-center text-white/70 font-light text-xs sm:text-sm group-hover:gradient-text-fast transition-all">
+                  <p className="mt-2 sm:mt-3 text-center text-white/70 font-light text-sm sm:text-sm group-hover:gradient-text-fast transition-all">
                     {item.title}
                   </p>
                 </div>
@@ -138,7 +138,7 @@ export default function Works() {
             {/* Close Button */}
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute -top-8 sm:-top-10 right-0 text-white/80 hover:text-white transition-all text-xs sm:text-sm font-light z-10"
+              className="absolute -top-8 sm:-top-10 right-0 text-white/80 hover:text-white transition-all text-sm sm:text-sm font-light z-10"
             >
               ESC tuşuna basın veya dışarı tıklayın
             </button>
@@ -158,10 +158,10 @@ export default function Works() {
               <div className="mt-4 sm:mt-6 flex justify-center">
                 <button
                   onClick={() => handleDownload(selectedImage.src, selectedImage.title)}
-                  className="px-6 sm:px-8 py-3 sm:py-4 gradient-button-accent text-white rounded-full text-sm sm:text-base font-normal hover:scale-105 transition-all shadow-lg border border-white/10 flex items-center gap-2 button-glow"
+                  className="px-6 sm:px-8 py-3 sm:py-4 gradient-button-accent text-white rounded-full text-base sm:text-base font-normal hover:scale-105 transition-all shadow-lg border border-white/10 flex items-center gap-2 button-glow"
                 >
                   <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5"
+                    className="w-5 h-5 sm:w-5 sm:h-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

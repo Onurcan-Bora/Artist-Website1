@@ -27,13 +27,13 @@ export default function About() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center">
               <div className="space-y-4 sm:space-y-6 md:space-y-8">
                 <div className="space-y-2 sm:space-y-3">
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-tight gradient-text-fast px-2">
+                  <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-light tracking-tight gradient-text-fast px-2">
                     Hakkımda
                   </h2>
                   <div className="w-12 sm:w-16 h-0.5 gradient-button-accent rounded-full"></div>
                 </div>
                 
-                <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-white/80 leading-relaxed font-light px-2">
+                <div className="space-y-3 sm:space-y-4 text-base sm:text-lg md:text-lg text-white/80 leading-relaxed font-light px-2">
                   <p className="hover:text-white transition-colors">
                     Müzisyen Onurcan Bora 1998 yılında İstanbul'da doğmuştur. Müziğe ortaokul yıllarında başlamış olup o yıllarda ilk konserlerini vermiştir.
                   </p>
@@ -52,16 +52,16 @@ export default function About() {
                 </div>
                 
                 <div className="flex flex-wrap gap-2 px-2">
-                  <span className="px-3 sm:px-4 py-1.5 sm:py-2 glass-effect rounded-full text-xs sm:text-sm font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
+                  <span className="px-4 sm:px-4 py-2 sm:py-2 glass-effect rounded-full text-sm sm:text-sm font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
                     Rock
                   </span>
-                  <span className="px-3 sm:px-4 py-1.5 sm:py-2 glass-effect rounded-full text-xs sm:text-sm font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
+                  <span className="px-4 sm:px-4 py-2 sm:py-2 glass-effect rounded-full text-sm sm:text-sm font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
                     Vokal
                   </span>
-                  <span className="px-3 sm:px-4 py-1.5 sm:py-2 glass-effect rounded-full text-xs sm:text-sm font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
+                  <span className="px-4 sm:px-4 py-2 sm:py-2 glass-effect rounded-full text-sm sm:text-sm font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
                     Sahne Performansı
                   </span>
-                  <span className="px-3 sm:px-4 py-1.5 sm:py-2 glass-effect rounded-full text-xs sm:text-sm font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
+                  <span className="px-4 sm:px-4 py-2 sm:py-2 glass-effect rounded-full text-sm sm:text-sm font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
                     Söz Yazarlığı
                   </span>
                 </div>
@@ -99,7 +99,7 @@ export default function About() {
             {/* Close Button */}
             <button
               onClick={() => setIsModalOpen(false)}
-              className="absolute -top-8 sm:-top-12 right-0 text-white/80 hover:text-white transition-all text-xs sm:text-sm font-light"
+              className="absolute -top-8 sm:-top-12 right-0 text-white/80 hover:text-white transition-all text-sm sm:text-sm font-light"
             >
               ESC tuşuna basın veya dışarı tıklayın
             </button>
@@ -117,10 +117,10 @@ export default function About() {
               <div className="mt-4 sm:mt-6 flex justify-center">
                 <button
                   onClick={handleDownload}
-                  className="px-6 sm:px-8 py-3 sm:py-4 gradient-button-accent text-white rounded-full text-sm sm:text-base font-normal hover:scale-105 transition-all shadow-lg border border-white/10 flex items-center gap-2 button-glow"
+                  className="px-6 sm:px-8 py-3 sm:py-4 gradient-button-accent text-white rounded-full text-base sm:text-base font-normal hover:scale-105 transition-all shadow-lg border border-white/10 flex items-center gap-2 button-glow"
                 >
                   <svg
-                    className="w-4 h-4 sm:w-5 sm:h-5"
+                    className="w-5 h-5 sm:w-5 sm:h-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

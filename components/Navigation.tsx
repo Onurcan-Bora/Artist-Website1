@@ -28,34 +28,34 @@ export default function Navigation() {
           : 'bg-transparent'
       }`}
     >
-      <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 md:gap-4 lg:gap-6">
+      <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6">
         <button
           onClick={() => scrollToSection('upcoming')}
-          className="text-xs sm:text-sm font-normal text-white/80 hover:text-white transition-all px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 whitespace-nowrap"
+          className="text-sm sm:text-base font-normal text-white/80 hover:text-white transition-all px-2.5 sm:px-3 md:px-3 py-1.5 sm:py-1.5 whitespace-nowrap"
         >
           Şarkılar
         </button>
         <button
           onClick={() => scrollToSection('events')}
-          className="text-xs sm:text-sm font-normal text-white/80 hover:text-white transition-all px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 whitespace-nowrap"
+          className="text-sm sm:text-base font-normal text-white/80 hover:text-white transition-all px-2.5 sm:px-3 md:px-3 py-1.5 sm:py-1.5 whitespace-nowrap"
         >
           Etkinlikler
         </button>
         <button
           onClick={() => scrollToSection('about')}
-          className="text-xs sm:text-sm font-normal text-white/80 hover:text-white transition-all px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 whitespace-nowrap"
+          className="text-sm sm:text-base font-normal text-white/80 hover:text-white transition-all px-2.5 sm:px-3 md:px-3 py-1.5 sm:py-1.5 whitespace-nowrap"
         >
           Hakkımda
         </button>
         <button
           onClick={() => scrollToSection('gallery')}
-          className="text-xs sm:text-sm font-normal text-white/80 hover:text-white transition-all px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 whitespace-nowrap"
+          className="text-sm sm:text-base font-normal text-white/80 hover:text-white transition-all px-2.5 sm:px-3 md:px-3 py-1.5 sm:py-1.5 whitespace-nowrap"
         >
           Galeri
         </button>
         <button
           onClick={() => scrollToSection('contact')}
-          className="text-xs sm:text-sm font-normal text-white/80 hover:text-white transition-all px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 whitespace-nowrap"
+          className="text-sm sm:text-base font-normal text-white/80 hover:text-white transition-all px-2.5 sm:px-3 md:px-3 py-1.5 sm:py-1.5 whitespace-nowrap"
         >
           İletişim
         </button>

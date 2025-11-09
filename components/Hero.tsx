@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="flex flex-col items-center space-y-8 sm:space-y-10 md:space-y-14">
           {/* Main Photo with subtle gradient border */}
           <div className="gradient-border animate-fade-scale animate-pulse-glow">
-            <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-black">
+            <div className="relative w-52 h-52 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-black">
               <Image
                 src="/assets/Main Photo.jpeg"
                 alt="Onurcan Bora"
@@ -25,7 +25,7 @@ export default function Hero() {
 
           {/* Name with blue light passing through */}
           <div className="text-center space-y-8 sm:space-y-10 w-full px-2">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light tracking-tight gradient-text animate-fade-in-delay elegant-glow break-words">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl font-light tracking-tight gradient-text animate-fade-in-delay elegant-glow break-words">
               Onurcan Bora
             </h1>
 
@@ -71,13 +71,13 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-in-delay-3 pt-2 w-full">
               <button
                 onClick={() => document.getElementById('upcoming')?.scrollIntoView({ behavior: 'smooth' })}
-                className="w-full max-w-xs sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 gradient-button-accent text-white rounded-full text-sm sm:text-base font-normal hover:scale-105 transition-all duration-300 shadow-lg border border-white/10 button-glow"
+                className="w-full max-w-xs sm:w-auto px-7 sm:px-8 py-3 sm:py-3 gradient-button-accent text-white rounded-full text-base sm:text-base font-normal hover:scale-105 transition-all duration-300 shadow-lg border border-white/10 button-glow"
               >
                 Yeni Şarkım
               </button>
               <button
                 onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-                className="w-full max-w-xs sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 glass-effect-strong text-white rounded-full text-sm sm:text-base font-normal hover:scale-105 transition-all duration-300 border border-white/20 hover:border-white/40 button-glow"
+                className="w-full max-w-xs sm:w-auto px-7 sm:px-8 py-3 sm:py-3 glass-effect-strong text-white rounded-full text-base sm:text-base font-normal hover:scale-105 transition-all duration-300 border border-white/20 hover:border-white/40 button-glow"
               >
                 Hakkımda
               </button>
