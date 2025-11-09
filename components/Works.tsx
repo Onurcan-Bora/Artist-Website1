@@ -14,6 +14,7 @@ const galleries = {
     { id: 5, src: '/assets/Press1.jpeg', title: 'Basın Fotoğrafı 1' },
     { id: 6, src: '/assets/Press2.jpeg', title: 'Basın Fotoğrafı 2' },
     { id: 7, src: '/assets/Press3.jpeg', title: 'Basın Fotoğrafı 3' },
+    { id: 8, src: '/assets/Press4.jpeg', title: 'Basın Fotoğrafı 4' },
   ],
 };
 
