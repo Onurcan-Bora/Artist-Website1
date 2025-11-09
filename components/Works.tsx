@@ -51,24 +51,24 @@ export default function Works() {
 
   return (
     <>
-      <section id="gallery" className="min-h-screen px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative">
+      <section id="gallery" className="min-h-screen px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-32 relative">
         <div className="max-w-7xl mx-auto w-full">
-          <div className="space-y-12 md:space-y-14">
-            <div className="text-center space-y-3">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight gradient-text-fast">
+          <div className="space-y-8 sm:space-y-12 md:space-y-14">
+            <div className="text-center space-y-2 sm:space-y-3">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-tight gradient-text-fast px-2">
                 Galeri
               </h2>
-              <div className="w-16 h-0.5 gradient-button-accent mx-auto rounded-full"></div>
-              <p className="text-base sm:text-lg text-white/70 max-w-2xl mx-auto font-light">
+              <div className="w-12 sm:w-16 h-0.5 gradient-button-accent mx-auto rounded-full"></div>
+              <p className="text-sm sm:text-base md:text-lg text-white/70 max-w-2xl mx-auto font-light px-2">
                 Konserler ve basın çekimlerinden fotoğraflar
               </p>
             </div>
 
             {/* Category Filter */}
-            <div className="flex flex-wrap justify-center gap-3">
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
               <button
                 onClick={() => setSelectedCategory('all')}
-                className={`px-5 py-2 rounded-full text-sm font-light transition-all duration-300 ${
+                className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-light transition-all duration-300 ${
                   selectedCategory === 'all'
                     ? 'gradient-button-accent text-white scale-105 shadow-lg border border-white/20'
                     : 'glass-effect text-white/70 border border-white/10 hover:scale-105 hover:border-white/20 hover:text-white'
@@ -78,7 +78,7 @@ export default function Works() {
               </button>
               <button
                 onClick={() => setSelectedCategory('concerts')}
-                className={`px-5 py-2 rounded-full text-sm font-light transition-all duration-300 ${
+                className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-light transition-all duration-300 ${
                   selectedCategory === 'concerts'
                     ? 'gradient-button-accent text-white scale-105 shadow-lg border border-white/20'
                     : 'glass-effect text-white/70 border border-white/10 hover:scale-105 hover:border-white/20 hover:text-white'
@@ -88,7 +88,7 @@ export default function Works() {
               </button>
               <button
                 onClick={() => setSelectedCategory('press')}
-                className={`px-5 py-2 rounded-full text-sm font-light transition-all duration-300 ${
+                className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-light transition-all duration-300 ${
                   selectedCategory === 'press'
                     ? 'gradient-button-accent text-white scale-105 shadow-lg border border-white/20'
                     : 'glass-effect text-white/70 border border-white/10 hover:scale-105 hover:border-white/20 hover:text-white'
@@ -99,14 +99,14 @@ export default function Works() {
             </div>
 
             {/* Gallery Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
               {getFilteredGallery().map((item) => (
                 <div
                   key={item.id}
                   className="group cursor-pointer"
                   onClick={() => setSelectedImage({ src: item.src, title: item.title })}
                 >
-                  <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border border-white/10 group-hover:border-white/30 transition-all duration-500 group-hover:scale-105">
+                  <div className="aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl border border-white/10 group-hover:border-white/30 transition-all duration-500 group-hover:scale-105">
                     <Image
                       src={item.src}
                       alt={item.title}
@@ -115,7 +115,7 @@ export default function Works() {
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
-                  <p className="mt-3 text-center text-white/70 font-light text-sm group-hover:gradient-text-fast transition-all">
+                  <p className="mt-2 sm:mt-3 text-center text-white/70 font-light text-xs sm:text-sm group-hover:gradient-text-fast transition-all">
                     {item.title}
                   </p>
                 </div>
@@ -138,30 +138,30 @@ export default function Works() {
             {/* Close Button */}
             <button
               onClick={() => setSelectedImage(null)}
-              className="absolute -top-10 right-0 text-white/80 hover:text-white transition-all text-sm font-light z-10"
+              className="absolute -top-8 sm:-top-10 right-0 text-white/80 hover:text-white transition-all text-xs sm:text-sm font-light z-10"
             >
               ESC tuşuna basın veya dışarı tıklayın
             </button>
 
-            <div className="glass-effect-strong rounded-3xl p-4 border border-white/20">
-              <div className="relative w-full max-h-[70vh] flex items-center justify-center overflow-hidden rounded-2xl">
+            <div className="glass-effect-strong rounded-2xl sm:rounded-3xl p-3 sm:p-4 border border-white/20">
+              <div className="relative w-full max-h-[70vh] flex items-center justify-center overflow-hidden rounded-xl sm:rounded-2xl">
                 <Image
                   src={selectedImage.src}
                   alt={selectedImage.title}
                   width={1200}
                   height={1200}
-                  className="w-auto h-auto max-w-full max-h-[70vh] object-contain rounded-2xl"
+                  className="w-full h-auto max-h-[70vh] object-contain mx-auto"
                 />
               </div>
 
               {/* Download Button with Gradient */}
-              <div className="mt-6 flex justify-center">
+              <div className="mt-4 sm:mt-6 flex justify-center">
                 <button
                   onClick={() => handleDownload(selectedImage.src, selectedImage.title)}
-                  className="px-8 py-4 gradient-button-accent text-white rounded-full text-base font-normal hover:scale-105 transition-all shadow-lg border border-white/10 flex items-center gap-2"
+                  className="px-6 sm:px-8 py-3 sm:py-4 gradient-button-accent text-white rounded-full text-sm sm:text-base font-normal hover:scale-105 transition-all shadow-lg border border-white/10 flex items-center gap-2 button-glow"
                 >
                   <svg
-                    className="w-5 h-5"
+                    className="w-4 h-4 sm:w-5 sm:h-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

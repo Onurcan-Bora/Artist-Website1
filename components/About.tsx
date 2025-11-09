@@ -21,19 +21,19 @@ export default function About() {
 
   return (
     <>
-      <section id="about" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 md:py-32 relative">
+      <section id="about" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-32 relative">
         <div className="max-w-6xl mx-auto w-full">
-          <div className="glass-effect-strong rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-all duration-500 gradient-bg">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 items-center">
-              <div className="space-y-6 md:space-y-8">
-                <div className="space-y-3">
-                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-tight gradient-text-fast">
+          <div className="glass-effect-strong rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 border border-white/10 hover:border-white/20 transition-all duration-500 gradient-bg">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center">
+              <div className="space-y-4 sm:space-y-6 md:space-y-8">
+                <div className="space-y-2 sm:space-y-3">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light tracking-tight gradient-text-fast px-2">
                     Hakkımda
                   </h2>
-                  <div className="w-16 h-0.5 gradient-button-accent rounded-full"></div>
+                  <div className="w-12 sm:w-16 h-0.5 gradient-button-accent rounded-full"></div>
                 </div>
                 
-                <div className="space-y-4 text-base sm:text-lg text-white/80 leading-relaxed font-light">
+                <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-white/80 leading-relaxed font-light px-2">
                   <p className="hover:text-white transition-colors">
                     Müzisyen Onurcan Bora 1998 yılında İstanbul'da doğmuştur. Müziğe ortaokul yıllarında başlamış olup o yıllarda ilk konserlerini vermiştir.
                   </p>
@@ -51,17 +51,17 @@ export default function About() {
                   </p>
                 </div>
                 
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-4 py-2 glass-effect rounded-full text-xs font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
+                <div className="flex flex-wrap gap-2 px-2">
+                  <span className="px-3 sm:px-4 py-1.5 sm:py-2 glass-effect rounded-full text-xs sm:text-sm font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
                     Rock
                   </span>
-                  <span className="px-4 py-2 glass-effect rounded-full text-xs font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
+                  <span className="px-3 sm:px-4 py-1.5 sm:py-2 glass-effect rounded-full text-xs sm:text-sm font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
                     Vokal
                   </span>
-                  <span className="px-4 py-2 glass-effect rounded-full text-xs font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
+                  <span className="px-3 sm:px-4 py-1.5 sm:py-2 glass-effect rounded-full text-xs sm:text-sm font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
                     Sahne Performansı
                   </span>
-                  <span className="px-4 py-2 glass-effect rounded-full text-xs font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
+                  <span className="px-3 sm:px-4 py-1.5 sm:py-2 glass-effect rounded-full text-xs sm:text-sm font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
                     Söz Yazarlığı
                   </span>
                 </div>
@@ -70,7 +70,7 @@ export default function About() {
               <div className="relative">
                 <button
                   onClick={() => setIsModalOpen(true)}
-                  className="w-full aspect-square rounded-3xl overflow-hidden shadow-2xl border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-105 animate-pulse-glow cursor-pointer"
+                  className="w-full aspect-square rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border border-white/10 hover:border-white/20 transition-all duration-500 hover:scale-105 animate-pulse-glow cursor-pointer"
                 >
                   <Image
                     src="/assets/Press3.jpeg"
@@ -89,38 +89,38 @@ export default function About() {
       {/* Photo Modal */}
       {isModalOpen && (
         <div
-          className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/90 backdrop-blur-lg"
+          className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/90 backdrop-blur-lg overflow-y-auto"
           onClick={() => setIsModalOpen(false)}
         >
           <div
-            className="relative max-w-5xl w-full"
+            className="relative max-w-5xl w-full my-8"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
             <button
               onClick={() => setIsModalOpen(false)}
-              className="absolute -top-12 right-0 text-white/80 hover:text-white transition-all text-sm font-light"
+              className="absolute -top-8 sm:-top-12 right-0 text-white/80 hover:text-white transition-all text-xs sm:text-sm font-light"
             >
               ESC tuşuna basın veya dışarı tıklayın
             </button>
 
-            <div className="glass-effect-strong rounded-3xl p-4 border border-white/20">
+            <div className="glass-effect-strong rounded-2xl sm:rounded-3xl p-3 sm:p-4 border border-white/20">
               <Image
                 src="/assets/Press3.jpeg"
                 alt="Onurcan Bora"
                 width={1200}
                 height={1200}
-                className="w-full h-auto rounded-2xl"
+                className="w-full h-auto max-h-[70vh] object-contain rounded-xl sm:rounded-2xl mx-auto"
               />
 
               {/* Download Button */}
-              <div className="mt-6 flex justify-center">
+              <div className="mt-4 sm:mt-6 flex justify-center">
                 <button
                   onClick={handleDownload}
-                  className="px-8 py-4 gradient-button-accent text-white rounded-full text-base font-normal hover:scale-105 transition-all shadow-lg border border-white/10 flex items-center gap-2"
+                  className="px-6 sm:px-8 py-3 sm:py-4 gradient-button-accent text-white rounded-full text-sm sm:text-base font-normal hover:scale-105 transition-all shadow-lg border border-white/10 flex items-center gap-2 button-glow"
                 >
                   <svg
-                    className="w-5 h-5"
+                    className="w-4 h-4 sm:w-5 sm:h-5"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
