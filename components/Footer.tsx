@@ -14,9 +14,6 @@ export default function Footer() {
             <h3 className="text-xl sm:text-xl md:text-2xl font-light gradient-text">
               Onurcan Bora
             </h3>
-            <p className="text-gray-400 text-sm sm:text-sm font-light leading-relaxed">
-              Rock müziğin özgün sesi ve sahne performanslarıyla müzik dünyasında yer edinen sanatçı.
-            </p>
           </div>
 
           <div className="space-y-3 sm:space-y-4">
