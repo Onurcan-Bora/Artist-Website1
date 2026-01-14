@@ -29,10 +29,10 @@ export default function Footer() {
                   </button>
                 ) : (
                   <a
-                    href="mailto:onurcanbora@gmail.com"
+                    href="mailto:onurcanboramusic@gmail.com"
                     className="text-gray-400 hover:text-white transition-all font-light break-all"
                   >
-                    onurcanbora@gmail.com
+                    onurcanboramusic@gmail.com
                   </a>
                 )}
               </div>
