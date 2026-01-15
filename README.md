@@ -238,7 +238,7 @@ Bu proje kişisel kullanım içindir. İçeriği (isim, fotoğraflar, linkler, k
 
 ## 📞 İletişim
 
-Sorularınız için: onurcanbora@gmail.com
+Sorularınız için: onurcanboramusic@gmail.com
 
 ---
 
