@@ -261,6 +261,19 @@ html {
   color: #ffffff;
 }
 
+.apple-hover {
+  transition: all 0.3s ease;
+}
+
+.apple-hover:hover {
+  background: linear-gradient(45deg, #fa233b, #fb5c74);
+  border-color: transparent;
+}
+
+.apple-hover:hover svg {
+  color: #ffffff;
+}
+
 .instagram-hover {
   transition: all 0.3s ease;
 }
