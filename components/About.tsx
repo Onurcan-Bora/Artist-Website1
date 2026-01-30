@@ -32,25 +32,25 @@ export default function About() {
                   </h2>
                   <div className="w-12 sm:w-16 h-0.5 gradient-button-accent rounded-full"></div>
                 </div>
-                
+
                 <div className="space-y-3 sm:space-y-4 text-base sm:text-lg md:text-lg text-white/80 leading-relaxed font-light px-2">
                   <p className="hover:text-white transition-colors">
-                    Müzisyen Onurcan Bora 1998 yılında İstanbul'da doğmuştur. Müziğe ortaokul yıllarında başlamış olup o yıllarda ilk konserlerini vermiştir.
+                    Müzisyen Onurcan Bora 1998 yılında İstanbul&apos;da doğmuştur. Müziğe ortaokul yıllarında başlamış olup o yıllarda ilk konserlerini vermiştir.
                   </p>
-                  
+
                   <p className="hover:text-white transition-colors">
                     Ortaokuldan sonra müziğe profesyonel bir adım atarak Avni Akyol Güzel Sanatlar Lisesini kazanmıştır. Lise yıllarından itibaren uzunca bir süre TRT THM Gençlik Korosunda bulunup birçok konser, radyo ve televizyon programında solist ve korist olarak yer almıştır.
                   </p>
-                  
+
                   <p className="hover:text-white transition-colors">
                     Liseden başarılı bir şekilde mezun olduktan sonra İstanbul Teknik Üniversitesi Türk Müziği Devlet Konservatuarı ses eğitimi bölümünü kazanmıştır. Lisans Öğrenimi boyunca birçok konserde solist olarak ve çok sesli korolarda bas vokal olarak bulunmuştur.
                   </p>
-                  
+
                   <p className="hover:text-white transition-colors">
-                    Üniversite yıllarında bir süre mankenlik yapmıştır. 2023 yılında Tan Taşçı'nın ekibinde yer alan başkanlar korosunda vokallik yapmıştır. Tüm dijital platformlarda Cover çalışmalarını video klipleriyle beraber yayınlamaya devam eden sanatçı Onurcan Bora, kendi şarkıları ve sahne çalışmalarına da devam etmektedir.
+                    Üniversite yıllarında bir süre mankenlik yapmıştır. 2023 yılında Tan Taşçı&apos;nın ekibinde yer alan başkanlar korosunda vokallik yapmıştır. Tüm dijital platformlarda Cover çalışmalarını video klipleriyle beraber yayınlamaya devam eden sanatçı Onurcan Bora, kendi şarkıları ve sahne çalışmalarına da devam etmektedir.
                   </p>
                 </div>
-                
+
                 <div className="flex flex-wrap gap-2 px-2">
                   <span className="px-4 sm:px-4 py-2 sm:py-2 glass-effect rounded-full text-sm sm:text-sm font-light text-white/80 border border-white/10 hover:scale-105 transition-all hover:border-white/20">
                     Rock
@@ -66,7 +66,7 @@ export default function About() {
                   </span>
                 </div>
               </div>
-              
+
               <div className="relative">
                 <button
                   onClick={() => setIsModalOpen(true)}
