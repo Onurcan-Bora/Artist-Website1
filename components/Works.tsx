@@ -36,11 +36,11 @@ export default function Works() {
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      
+
       // Extract filename from src
       const filename = src.split('/').pop() || `${title.replace(/\s+/g, '_')}.jpg`;
       link.download = filename;
-      
+
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -69,33 +69,30 @@ export default function Works() {
             <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
               <button
                 onClick={() => setSelectedCategory('all')}
-                className={`px-5 sm:px-5 py-2 sm:py-2 rounded-full text-sm sm:text-sm font-light transition-all duration-300 ${
-                  selectedCategory === 'all'
+                className={`px-5 sm:px-5 py-2 sm:py-2 rounded-full text-sm sm:text-sm font-light transition-all duration-300 ${selectedCategory === 'all'
                     ? 'gradient-button-accent text-white scale-105 shadow-lg border border-white/20'
                     : 'glass-effect text-white/70 border border-white/10 hover:scale-105 hover:border-white/20 hover:text-white'
-                }`}
+                  }`}
               >
                 Tümü
               </button>
               <button
                 onClick={() => setSelectedCategory('concerts')}
-                className={`px-5 sm:px-5 py-2 sm:py-2 rounded-full text-sm sm:text-sm font-light transition-all duration-300 ${
-                  selectedCategory === 'concerts'
+                className={`px-5 sm:px-5 py-2 sm:py-2 rounded-full text-sm sm:text-sm font-light transition-all duration-300 ${selectedCategory === 'concerts'
                     ? 'gradient-button-accent text-white scale-105 shadow-lg border border-white/20'
                     : 'glass-effect text-white/70 border border-white/10 hover:scale-105 hover:border-white/20 hover:text-white'
-                }`}
+                  }`}
               >
                 Konserler
               </button>
               <button
                 onClick={() => setSelectedCategory('press')}
-                className={`px-5 sm:px-5 py-2 sm:py-2 rounded-full text-sm sm:text-sm font-light transition-all duration-300 ${
-                  selectedCategory === 'press'
+                className={`px-5 sm:px-5 py-2 sm:py-2 rounded-full text-sm sm:text-sm font-light transition-all duration-300 ${selectedCategory === 'press'
                     ? 'gradient-button-accent text-white scale-105 shadow-lg border border-white/20'
                     : 'glass-effect text-white/70 border border-white/10 hover:scale-105 hover:border-white/20 hover:text-white'
-                }`}
+                  }`}
               >
-                Basın Fotoğrafları
+                Press
               </button>
             </div>
 
